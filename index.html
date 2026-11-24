@@ -1,0 +1,128 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;JARVIS AI&lt;/title&gt;
+  &lt;link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='Arial' font-weight='bold' fill='%2300ffff'%3EJ%3C/text%3E%3C/svg%3E" /&gt;
+  &lt;style&gt;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a1628;
+      color: #00ffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      letter-spacing: 4px;
+    }
+    .j-core {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 30px auto;
+    }
+    .ring {
+      position: absolute;
+      border: 2px solid #00ffff;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: spin 4s linear infinite;
+    }
+    .ring:nth-child(1) { width: 100%; height: 100%; animation-duration: 4s; }
+    .ring:nth-child(2) { width: 80%; height: 80%; top: 10%; left: 10%; animation-duration: 3s; animation-direction: reverse; }
+    .ring:nth-child(3) { width: 60%; height: 60%; top: 20%; left: 20%; animation-duration: 2s; }
+    .ring:nth-child(4) { width: 40%; height: 40%; top: 30%; left: 30%; animation-duration: 5s; animation-direction: reverse; }
+    .j-letter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      font-weight: bold;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff, 0 0 30px #0066ff;
+      z-index: 10;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 20px;
+      padding: 10px;
+    }
+    .links a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid #00ffff;
+      border-radius: 8px;
+      color: #00ffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-shadow: 0 0 5px #00ffff;
+    }
+    .links a:hover {
+      background: rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 15px #00ffff;
+      transform: translateY(-2px);
+    }
+    .note {
+      max-width: 600px;
+      text-align: center;
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid rgba(0, 255, 255, 0.3);
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.8rem;
+      opacity: 0.6;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      .j-core { width: 150px; height: 150px; }
+      .j-letter { font-size: 3rem; }
+      .links { flex-direction: column; align-items: center; }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;JARVIS AI&lt;/h1&gt;
+  &lt;div class="j-core"&gt;
+    &lt;div class="ring"&gt;&lt;/div&gt;
+    &lt;div class="ring"&gt;&lt;/div&gt;
+    &lt;div class="ring"&gt;&lt;/div&gt;
+    &lt;div class="ring"&gt;&lt;/div&gt;
+    &lt;span class="j-letter"&gt;J&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="links"&gt;
+    &lt;a href="https://mail.google.com" target="_blank" rel="noopener noreferrer"&gt;Career AI&lt;/a&gt;
+    &lt;a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer"&gt;Calendar&lt;/a&gt;
+    &lt;a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer"&gt;Voice AI&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="note"&gt;
+    &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; These are quick-access shortcuts to Google services (Mail, Calendar) and ChatGPT. They open in new tabs. This JARVIS dashboard does not modify any existing ChatGPT or JARVIS setup — it simply provides convenient links.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="footer"&gt;JARVIS AI Dashboard &amp;copy; 2026&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
